@@ -1,0 +1,16 @@
+<p>{{title}} User Dashboard !</p>
+<ul>
+    <li *ngFor="let user of user_list">
+        <div>User ID: {{user.user_id}}</div>
+        <div><input id="user-name"  [(ngModel)]="user.user_name"  placeholder="user name"></div>
+        <div>User Name: {{user.user_name}}</div>
+        <div>Gender: {{user.gender}}</div>
+        <div>Phone Number: {{user.phone_number}}</div>
+        <div>Address: {{user.address}}</div>
+        <div>Password: {{user.password}}</div>
+        <div>Blood Group: {{user.blood_group}}</div>
+        <div>Date Of Birth: {{user.date_of_birth}}</div>
+        <div>Date Of Registration: {{user.date_Of_registration}}</div>
+    </li>
+</ul>
+
